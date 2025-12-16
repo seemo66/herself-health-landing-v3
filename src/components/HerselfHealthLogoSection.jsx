@@ -1,6 +1,5 @@
-// footer component, displayed at the bottom of the page
 // contains site logo and optional links
-export default function Footer() {
+export default function HerselfHealthLogoSection() {
   return (
     // semantic footer element for accessibility
     <footer className="w-full z-[11] bg-pink flex items-center justify-center py-[45px] flex-col">

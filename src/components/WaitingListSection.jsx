@@ -1,6 +1,5 @@
 // WaitingListSection component
 // Displays a hero image, testimonial, and a form for users to join the waitlist
-import FormGuideSection from './FormGuideSection';
 import WaitingListForm from './WaitingListForm';
 
 export default function WaitingListSection() {
@@ -33,7 +32,7 @@ export default function WaitingListSection() {
                      lg:px-0 md:px-[30px] md:py-0 md:max-w-[822px] lg:left-[146px]"
         >
           {/* Testimonial block */}
-          <div className="mb-[35px] lg:mb-[40px] md:text-center md:hidden">
+          <div className="mb-[35px] lg:mb-[40px] md:text-center">
             <img
               src={`${process.env.PUBLIC_URL}/images/quotations-icon.png`}
               alt="Quotation mark icon"
@@ -43,48 +42,37 @@ export default function WaitingListSection() {
               I felt very valued and well cared for. It was a very good first appointment with the
               very thoughtful doctor.
             </blockquote>
-            <p className="font-untitled font-normal text-[18px] text-black leading-6 mb-[16px] md:text-[20px]">
-              – Herself Health Patient.
+            <p className="font-untitled font-normal text-[18px] text-[#1D2534] leading-6 mb-[16px] md:text-[20px]">
+              – Jayne H.
             </p>
           </div>
 
           {/* Headline */}
           <h2
+            id="call-now"
             className="font-reckless font-medium text-[40px] text-pink mb-[35px] 
-                          md:text-[50px] leading-[45px]"
+                          md:hidden leading-[45px]"
           >
             Schedule Your Appointment
           </h2>
           {/* Description */}
-          <p
-            id="call-now"
-            className="font-untitled font-normal text-[18px] text-black leading-6 mb-[25px] lg:text-[20px]"
-          >
-            Join Herself Health today and experience primary care designed for you, and coordinated
-            with your specialists, so your whole health feels connected.
+          <p className="font-untitled font-normal text-[18px] text-[#1D2534] leading-6 mb-[25px] md:hidden">
+            Fill out the form below and someone from our team will get back to you in 24 hours. 
           </p>
-
-          {/* <a href="tel:+18882901209" className="block w-fit mb-[35px]">
-            <button className="h-[67px] w-full rounded-lg bg-purple px-8 py-3 font-untitled text-[18px] md:text-[22px] text-white shadow-lg transition-colors duration-300 hover:bg-purple-dark lg:w-[410px] flex items-center justify-center gap-4">
-              <img
-                src={`${process.env.PUBLIC_URL}/images/telephone-white.svg`}
-                alt="telephone icon"
-                aria-hidden="true"
-                className="h-auto w-[30px]"
-              />
-              Call Now: (888) 290-1209
-            </button>
-          </a> */}
-
-          <h3 className="font-untitled font-semibold text-[18px] text-black leading-6 mb-[30px] lg:text-[20px] ">
-            Want to connect online instead? Fill out the form below and we’ll be in touch promptly
-            to help you get started.
-          </h3>
-
-          <FormGuideSection className="block md:hidden" />
 
           {/* Form box */}
           <div className="md:border-[2px] bg-white border-pink rounded-[10px] md:px-[83px] md:py-[61px]">
+            {/* Headline */}
+            <h2
+              className="hidden font-reckless font-medium text-pink mb-[35px] 
+                          md:block text-[50px] leading-[45px]"
+            >
+              Schedule Your Appointment
+            </h2>
+            {/* Description */}
+            <p className="hidden md:block font-untitled font-normal text-[18px] text-[#1D2534] leading-6 mb-[25px] lg:text-[20px]">
+              Fill out the form below and someone from our team will get back to you in 24 hours. 
+            </p>
             {/* Embedded form */}
             <WaitingListForm />
           </div>

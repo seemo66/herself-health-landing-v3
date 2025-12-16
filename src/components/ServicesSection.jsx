@@ -4,7 +4,7 @@
 export default function ServicesSection() {
   return (
     <section
-      className="m-auto flex flex-col items-center gap-[40px] bg-white px-[30px] pt-[50px] py-[40px] 
+      className="m-auto flex flex-col gap-[40px] bg-white px-[30px] pt-[50px] py-[40px] 
                  xl:flex-row xl:items-center xl:justify-center xl:gap-[54px] xl:px-[155px] xl:py-[90px]"
     >
       {/* Responsive service image */}
@@ -21,27 +21,43 @@ export default function ServicesSection() {
       </picture>
 
       {/* Text content */}
-      <div className="lg:max-w-[605px]">
-        <h2 className="mb-[16px] font-reckless text-[40px] leading-[100%] text-pink lg:text-[60px]">
-          What We Offer
+      <div className="xl:max-w-[605px]">
+        <h2 className="mb-[16px] font-reckless text-[40px] leading-tight text-pink lg:text-[60px]">
+          Why care built for women 50 plus makes a difference
         </h2>
 
-        <p className="mb-[25px] font-untitled text-[18px] font-normal leading-6 text-black lg:text-[20px]">
-          Our providers specialize in comprehensive healthcare for women 65+, creating personalized
-          treatment plans that address your current conditions, prevent future issues, and support
-          your health goals.
+        <hr className="hidden lg:block my-6 border-t border-black" />
+
+        <p className="mb-[25px] font-untitled text-[18px] font-normal leading-6 text-[#1D2534] lg:text-[20px]">
+          Women face changes in heart health, bone health, memory and metabolishm that often look
+          different from what men experience. Yet many parts of healthcare still rely on research
+          and standards built mostly around male bodies.
+        </p>
+
+        <p className="mb-[25px] font-untitled text-[18px] font-normal leading-6 text-[#1D2534] lg:text-[20px]">
+          <strong>
+            That is why we built Herself Health, care designed for women, by women, and centered on
+            what women want from their healthcare.
+          </strong>
+        </p>
+
+        <p className="mb-[25px] font-untitled text-[18px] font-normal leading-6 text-[#1D2534] lg:text-[20px]">
+          Traditional coverage does not always support this proactive approach. We bill insurance
+          for what it will covers, and your membership helps us offer the extra time and support
+          that make your care feel truly personalized.
+        </p>
+
+        <p className="mb-[25px] font-untitled text-[18px] font-normal leading-6 text-[#1D2534] lg:text-[20px]">
+          <strong>With the Herself Health Membership, you get:</strong>
         </p>
 
         {/* Service highlights with checkmarks */}
         <ul className="mb-[25px] space-y-4 pl-0 font-untitled text-[20px] font-bold leading-6 text-[#6A0058]">
           {[
-            'Longer visits with your provider',
-            'Same-day or next-day appointments',
-            'Specialist referrals and ongoing coordination to ensure seamless care',
-            'Preventive screenings',
-            'Chronic condition management',
-            'Mental health support',
-            'Care team available by phone and online',
+            'More time in every visit',
+            'Women’s health expertise',
+            'Midlife and menopause support',
+            'Proactive, preventive care',
           ].map((item, idx) => (
             <li key={idx} className="flex items-center space-x-3">
               <img
@@ -55,24 +71,11 @@ export default function ServicesSection() {
           ))}
         </ul>
 
-        <hr className="my-6 border-t border-black" />
-
-        <p className="mb-[25px] font-untitled text-[18px] font-normal leading-6 text-black lg:text-[20px]">
-          From prevention to management, we are here to help you thrive. Some conditions we
-          specialize in include:
+        <p className="mb-[25px] lg:mb-0 font-untitled text-[18px] font-normal leading-6 text-[#1D2534] lg:text-[20px]">
+          The reality is that traditional coverage doesn’t fully support this proactive approach.
+          Our solution is simple: we bill insurance for what it covers, and your membership helps us
+          offer the added time and support that make your care feel different.
         </p>
-
-        {/* List of key healthcare services */}
-        <ul className="list-disc pl-7 font-untitled text-[20px] font-normal leading-6 text-black lg:columns-2 lg:space-y-1">
-          <li>Arthritis</li>
-          <li>Behavioral Health</li>
-          <li>Diabetes</li>
-          <li>Heart Health</li>
-          <li>Osteoporosis</li>
-          <li>Post Menopause</li>
-          <li>Thyroid Health</li>
-          <li>Weight Management</li>
-        </ul>
       </div>
     </section>
   );

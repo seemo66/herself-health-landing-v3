@@ -9,15 +9,33 @@ import InsuranceSection from './components/InsuranceSection';
 import MembershipSection from './components/MembershipSection';
 // import FormGuideSectionDesktop from './components/FormGuideSectionDesktop';
 import WaitingListSection from './components/WaitingListSection';
+import ComparisonSection from './components/ComparisonSection';
+import OffersScection from './components/OffersSection';
+import LocationSection from './components/LocationsSection';
+import HerselfHealthLogoSection from './components/HerselfHealthLogoSection';
+import MembershipDetailsSection from './components/MembershipDetailsSection';
+import OurCareSection from './components/OurCareSection';
+import NextStepSection from './components/NextStepSection';
+import FaqSection from './components/FaqSection';
+import Testimonials from './components/Testimonials';
 
 function App() {
   // define the order of sections for easy management
   const sections = [
     HeroSection, // hero section with primary call-to-action
-    WaitingListSection, // waiting list or sign-up form
-    // GuideSection, // guide download section
     ServicesSection, // services offered by the company
     MembershipSection, // membership or subscription information
+    ComparisonSection, // comparison of services
+    OffersScection, // offers promotions
+    LocationSection,
+    WaitingListSection, // waiting list or sign-up form
+    HerselfHealthLogoSection,
+    MembershipDetailsSection,
+    OurCareSection,
+    Testimonials,
+    NextStepSection,
+    FaqSection,
+    // GuideSection, // guide download section
     InsuranceSection, // insurance information
     // FormGuideSectionDesktop, // desktop version of the form guide section
   ];
@@ -35,9 +53,6 @@ function App() {
           <Section key={index} />
         ))}
       </main>
-
-      {/* site footer, contains copyright, links, etc. */}
-      <Footer />
     </div>
   );
 }

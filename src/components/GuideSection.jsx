@@ -1,7 +1,7 @@
 export default function GuideSection() {
   return (
     <section className="bg-tan py-0 pb-12 px-6 md:px-24 md:flex md:flex-col md:py-[100px]">
-      <p className="font-untitled text-black text-[18px] mb-6 md:font-reckless md:text-[40px] md:mb-8 md:leading-[50px] md:text-pink lg:text-[45px] md:text-center">
+      <p className="font-untitled text-[#1D2534] text-[18px] mb-6 md:font-reckless md:text-[40px] md:mb-8 md:leading-[50px] md:text-pink lg:text-[45px] md:text-center">
         We’ll send your guide and help you take the next step toward your first visit.
       </p>
       <div className="block md:flex gap-4 md:gap-16">
@@ -13,7 +13,7 @@ export default function GuideSection() {
           />
         </div>
         <div className="flex flex-col justify-center md:max-w-md lg:max-w-lg">
-          <p className="font-untitled text-black text-[18px] md:text-[24px]">
+          <p className="font-untitled text-[#1D2534] text-[18px] md:text-[24px]">
             Get your free Guide To Feeling Your Best and learn what to expect at Herself Health –
             from your first visit to the care designed around your life.
           </p>

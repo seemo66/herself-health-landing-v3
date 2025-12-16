@@ -189,12 +189,9 @@ export default function WaitingListForm() {
                         : 'opacity-0 pointer-events-none'
                     }`}
       >
-        <p className="pb-5 text-xl">Thank you!</p>
-        <p className="pb-5">
-          Your form has been submitted - <br />
-          Your free guide is ready to download
-        </p>
-        <a
+        <p className="pb-2 text-xl">Thank you!</p>
+        <p className="pb-5">Your form has been submitted</p>
+        {/* <a
           href="/files/herself-health-guide.pdf"
           target="_blank"
           rel="noopener noreferrer"
@@ -209,7 +206,7 @@ export default function WaitingListForm() {
         <p className="text-xl">Prefer to call now?</p>
         <a className="text-xl" href="tel:8882901209">
           (888) 290-1209
-        </a>
+        </a> */}
       </div>
 
       {/* error message */}
@@ -231,7 +228,7 @@ export default function WaitingListForm() {
             {/* input label */}
             <label
               htmlFor={id}
-              className="font-untitled font-normal text-[18px] text-black block mb-1"
+              className="font-untitled font-normal text-[18px] text-[#1D2534] block mb-1"
             >
               {label}
             </label>
@@ -255,17 +252,14 @@ export default function WaitingListForm() {
         <button
           type="submit"
           disabled={isLoading}
-          className={`p-[10px] rounded-[10px] w-full mt-2 mb-2 md:col-span-2 font-untitled font-medium text-[18px] transition-colors ${
+          className={`p-[10px] rounded-[10px] w-full mt-2 mb-2 md:col-span-2 text-[22px] transition-colors ${
             isLoading
               ? 'bg-gray-400 text-gray-600 cursor-not-allowed'
               : 'bg-purple text-white hover:bg-purple/90'
           }`}
         >
-          {isLoading ? 'Submitting...' : 'Become a Patient'}
+          {isLoading ? 'Submitting...' : 'Submit'}
         </button>
-        <p className="md:col-span-2 mt-3">
-          We’ll send your guide and follow up to help schedule your visit.
-        </p>
       </form>
     </div>
   );

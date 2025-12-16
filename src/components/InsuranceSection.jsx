@@ -3,43 +3,43 @@
 
 export default function WaitingListSection() {
   return (
-    <section className="bg-lightPink">
+    <section className="bg-pink">
       {/* Insurance Plans Banner */}
       <div className="mx-auto max-w-[1270px] px-[30px] pb-[62px] pt-[34px] md:pt-[62px] md:text-center">
         <h2
-          className="mb-[35px] font-reckless text-[40px] leading-[45px] text-pink 
+          className="mb-[35px] font-reckless text-[40px] leading-[45px] text-white 
                      md:mb-[50px] md:text-[50px] md:leading-[55px]"
         >
           We Accept Medicare and Many Medicare Advantage Plans, Including:
         </h2>
         <div className="flex flex-wrap items-center justify-start gap-10 md:justify-center lg:gap-14 lg:gap-x-20">
           <img
-            src={`${process.env.PUBLIC_URL}/images/blue-cross-blue-shield-logo-black.png`}
+            src={`${process.env.PUBLIC_URL}/images/blue-cross-blue-shield-logo.svg`}
             alt="Blue Cross Blue Shield insurance logo"
             className="h-[30px] w-auto"
           />
           <img
-            src={`${process.env.PUBLIC_URL}/images/united-healthcare-logo-black.png`}
+            src={`${process.env.PUBLIC_URL}/images/united-healthcare-logo.svg`}
             alt="United Healthcare insurance logo"
             className="h-auto w-[130px]"
           />
           <img
-            src={`${process.env.PUBLIC_URL}/images/allina-aetna-logo-black.png`}
+            src={`${process.env.PUBLIC_URL}/images/allina-aetna-logo.svg`}
             alt="Allina Aetna insurance logo"
             className="h-auto w-[324px]"
           />
           <img
-            src={`${process.env.PUBLIC_URL}/images/ucare-logo-black.png`}
+            src={`${process.env.PUBLIC_URL}/images/ucare-logo.svg`}
             alt="UCare insurance logo"
             className="h-auto w-[140px]"
           />
           <img
-            src={`${process.env.PUBLIC_URL}/images/health-partners-logo-black.png`}
+            src={`${process.env.PUBLIC_URL}/images/health-partners-logo.svg`}
             alt="Health Partners insurance logo"
             className="h-auto w-[300px]"
           />
           <img
-            src={`${process.env.PUBLIC_URL}/images/humana-logo-black.png`}
+            src={`${process.env.PUBLIC_URL}/images/humana-logo.svg`}
             alt="Humana insurance logo"
             className="h-auto w-[135px]"
           />
@@ -47,27 +47,26 @@ export default function WaitingListSection() {
       </div>
 
       {/* Coverage Fallback / Contact Section */}
-      <div className="mx-auto max-w-[1728px] bg-lightPink px-[30px] pb-[60px] pt-[34px] md:text-center">
+      <div className="mx-auto max-w-[1728px] bg-darkPink px-[30px] py-[50px] text-white">
         <div className="mx-auto max-w-[1100px]">
-          <h2 className="mb-[16px] font-reckless text-[40px] leading-tight text-pink md:mb-[30px] md:text-[50px]">
+          <h2 className="mb-3 font-reckless text-[40px] leading-tight  lg:mb-[30px] lg:text-[60px] lg:text-center">
             Don’t See Your Plan?
           </h2>
-          <p className="font-untitled text-[18px] font-normal leading-6 text-black mb-8 md:mb-[40px] md:text-[20px]">
-            Call us at <span className="font-bold">888-290-1209</span> to confirm coverage —
-            <br />
-            we’ll walk you through your options.
-          </p>
-          <a href="tel:+18882901209" className="block w-fit m-auto">
-            <button className="h-[67px] w-full rounded-lg bg-purple px-8 py-3 font-untitled text-[18px] md:text-[22px] text-white shadow-lg transition-colors duration-300 hover:bg-purple-dark lg:w-[410px] flex items-center justify-center gap-4">
+
+          <div className="flex flex-col lg:flex-row max-w-[1000px] lg:m-auto">
+            <a href="tel:+18882901209" className="flex-shrink-0">
               <img
                 src={`${process.env.PUBLIC_URL}/images/telephone-white.svg`}
                 alt="telephone icon"
                 aria-hidden="true"
-                className="h-auto w-[30px]"
+                className="h-auto w-[45px]"
               />
-              Call Now: (888) 290-1209
-            </button>
-          </a>
+            </a>
+
+            <p className="flex text-center items-center justify-start text-[26px] lg:text-[36px] font-bold lg:font-medium leading-tight mt-4 lg:mt-0">
+              Call us at 888-290-1209 to confirm coverage - we’ll walk you through your options.
+            </p>
+          </div>
         </div>
       </div>
     </section>
