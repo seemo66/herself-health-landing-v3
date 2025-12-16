@@ -189,8 +189,8 @@ export default function WaitingListForm() {
                         : 'opacity-0 pointer-events-none'
                     }`}
       >
-        <p className="pb-2 text-xl">Thank you!</p>
-        <p className="pb-5">Your form has been submitted</p>
+        <p className="pb-2 text-2xl text-center lg:text-left">Thank you!</p>
+        <p className="pb-5 text-2xl text-center lg:text-left">Your form has been submitted</p>
         {/* <a
           href="/files/herself-health-guide.pdf"
           target="_blank"

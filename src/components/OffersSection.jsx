@@ -101,9 +101,27 @@ export default function ServicesSection() {
           {memberships.map((membership) => (
             <MembershipCard key={membership.id} membership={membership} />
           ))}
+
+          {/* CTA */}
+          <div className="mx-auto mt-[35px] lg:mt-auto lg:flex lg:flex-col">
+            <button
+              className="flex justify-center items-center w-[330px] md:w-[365px] h-[67px] lg:h-[44px] lg:mx-auto bg-purple text-white font-regular text-[21px]
+                     rounded-lg shadow-lg hover:bg-purple-dark transition-colors duration-300 mb-6"
+              onClick={() => {
+                document.getElementById('call-now')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              Schedule an Appointment
+            </button>
+
+            <p className="mb-[25px] font-untitled text-[18px] font-normal leading-6 text-[#1D2534] lg:text-[20px]">
+              Submit the form - a specialist will call to schedule your first visit and help you
+              choose monthly vs annual.
+            </p>
+          </div>
         </div>
 
-        <div className="lg:flex lg:gap-6 lg:mt-10 lg:max-w-[1400px] lg:m-auto">
+        <div className="lg:flex lg:gap-6 lg:mt-20 lg:max-w-[1400px] lg:m-auto">
           {/* Column 1: heading */}
           <div className="lg:w-1/3">
             <h3 className="mb-4 font-medium text-darkPink text-[28px] lg:text-[35px]">

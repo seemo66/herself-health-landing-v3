@@ -27,18 +27,6 @@ export default function MembershipCard({ membership }) {
       <p className="font-medium text-darkPink text-[20px] leading-[25px] lg:mb-5">
         {membership.description}
       </p>
-      {/* CTA */}
-      <div className="mx-auto mt-[35px] lg:mt-auto">
-        <button
-          className="flex justify-center items-center w-[330px] md:w-[365px] h-[67px] lg:h-[44px] bg-purple text-white font-regular text-[21px]
-                     rounded-lg shadow-lg hover:bg-purple-dark transition-colors duration-300"
-          onClick={() => {
-            document.getElementById('call-now')?.scrollIntoView({ behavior: 'smooth' });
-          }}
-        >
-          {membership.cta}
-        </button>
-      </div>
     </div>
   );
 }
