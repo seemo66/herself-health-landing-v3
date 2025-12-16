@@ -85,7 +85,7 @@ export default function ServicesSection() {
       </div>
 
       <div>
-        <div className="mb-12 lg:flex lg:gap-4 lg:flex-wrap xl:px-16">
+        <div className="mb-8 lg:flex lg:gap-4 lg:flex-wrap xl:px-16">
           <div className="flex flex-col gap-4 border border-black rounded-lg bg-pink text-white px-[21px] py-[37px] mb-6 lg:flex-1 lg:justify-center lg:gap-8 lg:px-[60px]">
             <h2 className="font-reckless text-[40px] leading-tight lg:text-[60px]">
               Membership Options
@@ -101,24 +101,25 @@ export default function ServicesSection() {
           {memberships.map((membership) => (
             <MembershipCard key={membership.id} membership={membership} />
           ))}
+        </div>
 
-          {/* CTA */}
-          <div className="mx-auto mt-[35px] lg:mt-auto lg:flex lg:flex-col">
-            <button
-              className="flex justify-center items-center w-[330px] md:w-[365px] h-[67px] lg:h-[44px] lg:mx-auto bg-purple text-white font-regular text-[21px]
-                     rounded-lg shadow-lg hover:bg-purple-dark transition-colors duration-300 mb-6"
-              onClick={() => {
-                document.getElementById('call-now')?.scrollIntoView({ behavior: 'smooth' });
-              }}
-            >
-              Schedule an Appointment
-            </button>
+        {/* CTA */}
+        <div className="mb-12 flex flex-col gap-6 lg:items-center">
+          <button
+            className="mx-auto w-[330px] md:w-[385px] lg:w-[594px]
+               bg-purple text-white font-untitled text-[22px]
+               py-4 px-4 rounded-lg shadow-lg hover:bg-purple-dark transition-colors"
+            onClick={() => {
+              document.getElementById('waiting-list')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
+            Schedule an Appointment
+          </button>
 
-            <p className="mb-[25px] font-untitled text-[18px] font-normal leading-6 text-[#1D2534] lg:text-[20px]">
-              Submit the form - a specialist will call to schedule your first visit and help you
-              choose monthly vs annual.
-            </p>
-          </div>
+          <p className="mb-[25px] font-untitled text-[18px] leading-6 text-[#1D2534] lg:text-[20px] text-left lg:text-center">
+            Submit the form — a specialist will call to schedule your first visit and help you
+            choose monthly vs annual.
+          </p>
         </div>
 
         <div className="lg:flex lg:gap-6 lg:mt-20 lg:max-w-[1400px] lg:m-auto">
