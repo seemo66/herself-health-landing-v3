@@ -32,7 +32,7 @@ export default function WaitingListSection() {
                      lg:px-0 md:px-[30px] md:py-0 md:max-w-[822px] lg:left-[146px]"
         >
           {/* Testimonial block */}
-          <div className="mb-[35px] lg:mb-[40px] md:text-center">
+          <div className="mb-[35px] lg:mb-[40px] md:text-center" id="call-now">
             <img
               src={`${process.env.PUBLIC_URL}/images/quotations-icon.png`}
               alt="Quotation mark icon"
@@ -48,11 +48,7 @@ export default function WaitingListSection() {
           </div>
 
           {/* Headline */}
-          <h2
-            id="call-now"
-            className="font-reckless font-medium text-[40px] text-pink mb-[35px] 
-                          md:hidden leading-[45px]"
-          >
+          <h2 className="font-reckless font-medium text-[40px] text-pink mb-[35px] md:hidden leading-[45px]">
             Schedule Your Appointment
           </h2>
           {/* Description */}

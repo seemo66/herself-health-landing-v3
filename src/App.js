@@ -1,7 +1,6 @@
 // main entry point for the app
 // imports top-level layout and section components
 import Header from './components/Header';
-import Footer from './components/Footer';
 import HeroSection from './components/HeroSection';
 // import GuideSection from './components/GuideSection';
 import ServicesSection from './components/ServicesSection';

@@ -10,7 +10,8 @@ export default function ServicesSection() {
       price: '$99 per month',
       introLabel: 'Limited Time Introductory Price',
       introPrice: '$249',
-      description: 'One easy payment for a full year of care at the lowest price.',
+      description:
+        'All the same benefits with convenient monthly payments. You can cancel in the first 30 days if it’s not the right fit.',
       cta: 'Choose monthly',
     },
     {
@@ -22,10 +23,10 @@ export default function ServicesSection() {
       price: '$999 per year',
       introLabel: 'Limited Time Introductory Price',
       introPrice: '$2,499',
+      description: 'One easy payment for a full year of care at the lowest price.',
       bonus: '1.5 months free',
-      description:
-        'All the same benefits with convenient monthly payments. You can cancel in the first 30 days if it’s not the right fit.',
-      cta: 'Choose anual',
+
+      cta: 'Choose annual',
     },
   ];
 
@@ -121,7 +122,7 @@ export default function ServicesSection() {
               <li>Help with sleep, mood, and energy</li>
             </ul>
 
-            <ul className="list-disc pl-8 space-y-2 font-medium text-darkPink text-[20px] leading-[28px]">
+            <ul className="list-disc pl-8 space-y-2 font-medium text-darkPink text-[20px] leading-[28px] lg:text-[23px]">
               <li>Mental health care</li>
               <li>Weight and metabolic support</li>
               <li>Care coordination</li>

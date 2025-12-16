@@ -43,8 +43,8 @@ export default function ServicesSection() {
 
         <p className="mb-[25px] font-untitled text-[18px] font-normal leading-6 text-[#1D2534] lg:text-[20px]">
           Traditional coverage does not always support this proactive approach. We bill insurance
-          for what it will covers, and your membership helps us offer the extra time and support
-          that make your care feel truly personalized.
+          for what it will cover, and your membership helps us offer the extra time and support that
+          make your care feel truly personalized.
         </p>
 
         <p className="mb-[25px] font-untitled text-[18px] font-normal leading-6 text-[#1D2534] lg:text-[20px]">
