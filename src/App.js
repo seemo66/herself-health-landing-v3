@@ -12,7 +12,7 @@ import WaitingListSection from './components/WaitingListSection';
 import ComparisonSection from './components/ComparisonSection';
 import OffersScection from './components/OffersSection';
 import LocationSection from './components/LocationsSection';
-import HerselfHealthLogoSection from './components/HerselfHealthLogoSection';
+// import HerselfHealthLogoSection from './components/HerselfHealthLogoSection';
 import MembershipDetailsSection from './components/MembershipDetailsSection';
 import OurCareSection from './components/OurCareSection';
 import NextStepSection from './components/NextStepSection';
@@ -28,7 +28,6 @@ function App() {
     ComparisonSection, // comparison of services
     OffersScection, // offers promotions
     WaitingListSection, // waiting list or sign-up form
-    HerselfHealthLogoSection,
     MembershipDetailsSection,
     OurCareSection,
     Testimonials,
