@@ -85,8 +85,8 @@ export default function ServicesSection() {
       </div>
 
       <div>
-        <div className="mb-8 lg:flex lg:gap-4 lg:flex-wrap xl:px-16">
-          <div className="flex flex-col gap-4 border border-black rounded-lg bg-pink text-white px-[21px] py-[37px] mb-6 lg:flex-1 lg:justify-center lg:gap-8 lg:px-[60px]">
+        <div className="mb-8 flex flex-col gap-4 md:flex-row md:flex-wrap lg:gap-6 xl:px-16">
+          <div className="w-full flex flex-col gap-4 border border-black rounded-lg bg-pink text-white px-[21px] py-[37px] lg:flex-1 lg:justify-center lg:gap-8 lg:px-[60px]">
             <h2 className="font-reckless text-[40px] leading-tight lg:text-[60px]">
               Membership Options
             </h2>

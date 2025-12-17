@@ -29,18 +29,17 @@ export default function HeroSection() {
       >
         <div className="md:w-[55%] lg:w-[55%] xl:w-[50%] 2xl:w-[40%] md:max-w-7xl md:pr-8">
           {/* main headline */}
-          <h1 className="font-reckless text-[40px] text-pink text-4xl leading-tight mb-3 md:text-[50px] xl:text-[60px] xl:leading-[60px]">
+          <h1 className="font-reckless text-[40px] text-pink text-4xl leading-tight mb-3 md:text-[50px] xl:text-[60px]">
             Primary Care That Puts Women First
           </h1>
 
           {/* subheadline */}
           <h2 className="text-[24px] text-darkPink text-lg font-medium mb-3 xl:text-[30px] xl:leading-tight">
-            The Herself Health Membership gives women 50+ more time, more support, and care built
-            around the realities of midlife.
+            Care designed for women's lives after 50.
           </h2>
 
           {/* main descriptive paragraphs */}
-          <p className="font-untitled text-[#1D2534] text-[18px] mb-3 leading-tight md:text-[21px] md:hidden xl:block ">
+          <p className="font-untitled text-[#1D2534] text-[18px] mb-3 leading-tight md:text-[21px] md:hidden 2xl:block ">
             Too often, healthcare does not give women the high-quality, female-focused care they
             deserve. Many women are rushed through appointments, have symptoms brushed aside, or
             leave without clear answers. Your health changes during midlife, and your healthcare

@@ -1,6 +1,6 @@
 export default function MembershipCard({ membership }) {
   return (
-    <div className="border border-black rounded-lg bg-[#FFF5EC] px-[21px] py-[21px] mb-6 lg:flex-1 lg:px-[64px] lg:py-[64px] lg:items-center lg:text-center lg:flex lg:flex-col lg:min-w-[475px]">
+    <div className="w-full border border-black rounded-lg bg-[#FFF5EC] px-[21px] py-[21px] lg:flex-1 lg:px-[64px] lg:py-[64px] lg:items-center lg:text-center lg:flex lg:flex-col lg:min-w-[475px]">
       {/* Badge */}
       <p className="font-medium text-pink text-[23px] mb-2">{membership.badge}</p>
       {/* Title */}

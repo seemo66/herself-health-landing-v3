@@ -2,7 +2,7 @@
 // Displays a list of clinic locations with addresses
 export default function LocationSection() {
   return (
-    <section className="max-w-[1728px] bg-pink py-[35px] px-[30px]">
+    <section className="max-w-[1728px] bg-pink pb-[35px] pt-0 px-[30px]">
       {/* Section Heading */}
       <h2 className="font-reckless text-[40px] text-white md:text-center lg:text-[60px]">
         Locations

@@ -32,7 +32,7 @@ export default function ServicesSection() {
     {
       question: 'What if I cancel the monthly plan within 30 days after using a screening?',
       answer: {
-        text: 'If you complete an included screening like a mammogram, DEXA, or body composition scan, we will bill your insurance if it is covered or charge the standard cash price.',
+        text: 'If you complete an included screening like a DEXA or body composition scan, we will bill your insurance if it is covered or charge the standard cash price.',
       },
     },
     {

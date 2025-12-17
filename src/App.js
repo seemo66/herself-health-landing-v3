@@ -1,10 +1,11 @@
 // main entry point for the app
 // imports top-level layout and section components
 import Header from './components/Header';
+import Footer from './components/Footer';
 import HeroSection from './components/HeroSection';
 // import GuideSection from './components/GuideSection';
 import ServicesSection from './components/ServicesSection';
-import InsuranceSection from './components/InsuranceSection';
+// import InsuranceSection from './components/InsuranceSection';
 import MembershipSection from './components/MembershipSection';
 // import FormGuideSectionDesktop from './components/FormGuideSectionDesktop';
 import WaitingListSection from './components/WaitingListSection';
@@ -26,7 +27,6 @@ function App() {
     MembershipSection, // membership or subscription information
     ComparisonSection, // comparison of services
     OffersScection, // offers promotions
-    LocationSection,
     WaitingListSection, // waiting list or sign-up form
     HerselfHealthLogoSection,
     MembershipDetailsSection,
@@ -34,8 +34,10 @@ function App() {
     Testimonials,
     NextStepSection,
     FaqSection,
+    Footer,
+    LocationSection,
     // GuideSection, // guide download section
-    InsuranceSection, // insurance information
+    // InsuranceSection, // insurance information
     // FormGuideSectionDesktop, // desktop version of the form guide section
   ];
 

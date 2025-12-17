@@ -8,7 +8,7 @@ export default function ServicesSection() {
                  xl:flex-row xl:items-center xl:justify-center xl:gap-[54px] xl:px-[155px] xl:py-[90px]"
     >
       {/* Responsive service image */}
-      <picture className="block aspect-[1.34] w-full md:aspect-auto md:w-[50%]">
+      <picture className="block aspect-[1.34] w-full xl:aspect-auto xl:w-[50%] md:max-h-[700px] xl:max-h-full">
         <source
           srcSet={`${process.env.PUBLIC_URL}/images/services-desktop.webp`}
           media="(min-width: 768px)"
@@ -16,20 +16,20 @@ export default function ServicesSection() {
         <img
           src={`${process.env.PUBLIC_URL}/images/services-mobile.webp`}
           alt="A nurse assists an older woman as they both review medical information on a tablet."
-          className="h-full w-full rounded-[10px] object-cover lg:max-w-[643px]"
+          className="h-full w-full rounded-[10px] object-cover 2xl:max-w-[643px]"
         />
       </picture>
 
       {/* Text content */}
       <div className="xl:max-w-[605px]">
-        <h2 className="mb-[16px] font-reckless text-[40px] leading-tight text-pink lg:text-[60px]">
+        <h2 className="mb-[16px] font-reckless text-[40px] leading-tight text-pink lg:text-[50px] 2xl:text-[60px]">
           Why care built for women 50 plus makes a difference
         </h2>
 
         <hr className="hidden lg:block my-6 border-t border-black" />
 
         <p className="mb-[25px] font-untitled text-[18px] font-normal leading-6 text-[#1D2534] lg:text-[20px]">
-          Women face changes in heart health, bone health, memory and metabolishm that often look
+          Women face changes in heart health, bone health, memory and metabolism that often look
           different from what men experience. Yet many parts of healthcare still rely on research
           and standards built mostly around male bodies.
         </p>
@@ -70,12 +70,6 @@ export default function ServicesSection() {
             </li>
           ))}
         </ul>
-
-        <p className="mb-[25px] lg:mb-0 font-untitled text-[18px] font-normal leading-6 text-[#1D2534] lg:text-[20px]">
-          The reality is that traditional coverage doesn’t fully support this proactive approach.
-          Our solution is simple: we bill insurance for what it covers, and your membership helps us
-          offer the added time and support that make your care feel different.
-        </p>
       </div>
     </section>
   );
