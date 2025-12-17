@@ -9,13 +9,10 @@ export default function HeroSection() {
       <div className="relative w-full max-h-[870px]">
         <picture>
           {/* desktop image source with media query */}
-          <source
-            srcSet={`${process.env.PUBLIC_URL}/images/hero-desktop.webp`}
-            media="(min-width: 768px)"
-          />
+          <source srcSet="/images/member/hero-desktop.webp" media="(min-width: 768px)" />
           {/* mobile image (default) */}
           <img
-            src={`${process.env.PUBLIC_URL}/images/hero-mobile.webp`}
+            src="/images/member/hero-mobile.webp"
             alt="A woman happily smiling."
             className="block w-full md:min-h-[525px] object-cover"
           />
@@ -39,14 +36,14 @@ export default function HeroSection() {
           </h2>
 
           {/* main descriptive paragraphs */}
-          <p className="font-untitled text-[#1D2534] text-[18px] mb-3 leading-tight md:text-[21px] md:hidden 2xl:block ">
+          <p className="font-untitled text-[#1D2534] text-[18px] mb-3 leading-tight md:leading-normal md:text-[21px] md:hidden 2xl:block ">
             Too often, healthcare does not give women the high-quality, female-focused care they
             deserve. Many women are rushed through appointments, have symptoms brushed aside, or
             leave without clear answers. Your health changes during midlife, and your healthcare
             should change to fit your needs.
           </p>
 
-          <p className="font-untitled text-[#1D2534] text-[18px] mb-7 md:text-[21px] md:hidden xl:block">
+          <p className="font-untitled text-[#1D2534] text-[18px] leading-tight md:leading-normal mb-7 md:text-[21px] md:hidden xl:block">
             <strong className="hidden lg:inline">
               The Herself Health Membership is different.
             </strong>

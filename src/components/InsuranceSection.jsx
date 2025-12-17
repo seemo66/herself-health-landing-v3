@@ -14,32 +14,32 @@ export default function WaitingListSection() {
         </h2>
         <div className="flex flex-wrap items-center justify-start gap-10 md:justify-center lg:gap-14 lg:gap-x-20">
           <img
-            src={`${process.env.PUBLIC_URL}/images/blue-cross-blue-shield-logo.svg`}
+            src="/images/member/blue-cross-blue-shield-logo.svg"
             alt="Blue Cross Blue Shield insurance logo"
             className="h-[30px] w-auto"
           />
           <img
-            src={`${process.env.PUBLIC_URL}/images/united-healthcare-logo.svg`}
+            src="/images/member/united-healthcare-logo.svg"
             alt="United Healthcare insurance logo"
             className="h-auto w-[130px]"
           />
           <img
-            src={`${process.env.PUBLIC_URL}/images/allina-aetna-logo.svg`}
+            src="/images/member/allina-aetna-logo.svg"
             alt="Allina Aetna insurance logo"
             className="h-auto w-[324px]"
           />
           <img
-            src={`${process.env.PUBLIC_URL}/images/ucare-logo.svg`}
+            src="/images/member/ucare-logo.svg"
             alt="UCare insurance logo"
             className="h-auto w-[140px]"
           />
           <img
-            src={`${process.env.PUBLIC_URL}/images/health-partners-logo.svg`}
+            src="/images/member/health-partners-logo.svg"
             alt="Health Partners insurance logo"
             className="h-auto w-[300px]"
           />
           <img
-            src={`${process.env.PUBLIC_URL}/images/humana-logo.svg`}
+            src="/images/member/humana-logo.svg"
             alt="Humana insurance logo"
             className="h-auto w-[135px]"
           />
@@ -56,7 +56,7 @@ export default function WaitingListSection() {
           <div className="flex flex-col lg:flex-row max-w-[1000px] lg:m-auto">
             <a href="tel:+18882901209" className="flex-shrink-0">
               <img
-                src={`${process.env.PUBLIC_URL}/images/telephone-white.svg`}
+                src="/images/member/telephone-white.svg"
                 alt="telephone icon"
                 aria-hidden="true"
                 className="h-auto w-[45px]"

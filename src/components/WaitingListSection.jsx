@@ -11,13 +11,10 @@ export default function WaitingListSection() {
         <div className="w-full">
           <picture>
             {/* Desktop image */}
-            <source
-              srcSet={`${process.env.PUBLIC_URL}/images/waitlist-desktop.webp`}
-              media="(min-width: 768px)"
-            />
+            <source srcSet="/images/member/waitlist-desktop.webp" media="(min-width: 768px)" />
             {/* Mobile fallback */}
             <img
-              src={`${process.env.PUBLIC_URL}/images/waitlist-mobile.webp`}
+              src="/images/member/waitlist-mobile.webp"
               alt="A woman wearing glasses stands in front of a closed door, looking directly at the camera"
               className="block w-full md:min-h-[694px] object-cover md:h-[877px]"
             />
@@ -34,7 +31,7 @@ export default function WaitingListSection() {
           {/* Testimonial block */}
           <div className="mb-[35px] lg:mb-[40px] md:text-center" id="call-now">
             <img
-              src={`${process.env.PUBLIC_URL}/images/quotations-icon.png`}
+              src="/images/member/quotations-icon.png"
               alt="Quotation mark icon"
               className="block w-[50px] h-full mb-[15px] md:mx-auto"
             />

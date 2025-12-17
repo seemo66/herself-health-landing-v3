@@ -71,7 +71,7 @@ export default function MembershipSection() {
         {stats.map((stat, idx) => (
           <div key={idx} className="flex w-full flex-col gap-[7px] lg:flex-row">
             <img
-              src={`${process.env.PUBLIC_URL}/images/${stat.icon}`}
+              src={`/images/member/${stat.icon}`}
               alt={stat.alt}
               className="w-auto h-auto shrink-0 self-start lg:mt-2 lg:mr-6"
             />

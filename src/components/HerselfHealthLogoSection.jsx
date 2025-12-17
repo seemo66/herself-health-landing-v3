@@ -8,7 +8,7 @@ export default function HerselfHealthLogoSection() {
         {/* site logo linking to home page */}
         <a href="/" aria-label="Herself Health home" className="flex items-center">
           <img
-            src={`${process.env.PUBLIC_URL}/images/logo-white.svg`} // logo image from public folder
+            src="/images/member/logo-white.svg" // logo image from public folder
             alt="Herself Health logo"
             className="h-auto w-auto"
           />

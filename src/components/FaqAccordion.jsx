@@ -26,7 +26,7 @@ export default function FaqAccordion({ questionData }) {
               <p className="font-reckless text-[30px] text-pink leading-tight">{faq.question}</p>
 
               <img
-                src={`${process.env.PUBLIC_URL}/images/plus-icon.png`}
+                src="/images/member/plus-icon.png"
                 alt="Toggle"
                 className={`w-[22px] h-[22px] ml-auto transform transition-transform duration-700 ${
                   isOpen ? 'rotate-180' : ''

@@ -7,11 +7,11 @@ export default function ServicesSection() {
       {/* Responsive service image */}
       <picture className="block xl:w-1/2">
         <source
-          srcSet={`${process.env.PUBLIC_URL}/images/membership-details-desktop.webp`}
+          srcSet="/images/member/membership-details-desktop.webp"
           media="(min-width: 768px)"
         />
         <img
-          src={`${process.env.PUBLIC_URL}/images/membership-details-mobile.webp`}
+          src="/images/member/membership-details-mobile.webp"
           alt="A lady, at home, sitting at a desk, on a laptop."
           className="h-full w-full rounded-[10px] object-cover max-h-[950px]"
         />

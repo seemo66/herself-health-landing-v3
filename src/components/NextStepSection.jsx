@@ -6,12 +6,9 @@ export default function ServicesSection() {
     <section className="m-auto flex flex-col gap-[40px] bg-white px-[30px] pt-[50px] py-[40px] xl:flex-row m-w-[1400px] lg:gap-16 lg:px-[90px] lg:justify-center xl:py-[90px]">
       {/* Responsive service image */}
       <picture className="block xl:w-1/2">
-        <source
-          srcSet={`${process.env.PUBLIC_URL}/images/next-steps-desktop.webp`}
-          media="(min-width: 768px)"
-        />
+        <source srcSet="/images/member/next-steps-desktop.webp" media="(min-width: 768px)" />
         <img
-          src={`${process.env.PUBLIC_URL}/images/next-steps-mobile.webp`}
+          src="/images/member/next-steps-mobile.webp"
           alt="A lady, leaning on a wall behind her, standing."
           className=" w-full rounded-[10px] object-cover max-h-[950px] lg:aspect-[645/566]"
         />

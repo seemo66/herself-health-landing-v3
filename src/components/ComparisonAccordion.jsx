@@ -95,7 +95,7 @@ export default function ComparisonAccordion() {
                   {care.title}
                 </p>
                 <img
-                  src={`${process.env.PUBLIC_URL}/images/arrow-right.svg`}
+                  src="/images/member/arrow-right.svg"
                   alt="Arrow"
                   className={`shrink-0 w-[22px] h-[22px] transform transition-transform duration-700 ${
                     isOpen ? 'rotate-90' : ''

@@ -35,12 +35,9 @@ export default function ServicesSection() {
       <div className="lg:flex lg:flex-row-reverse lg:gap-14 lg:max-w-[1400px]">
         {/* Responsive service image */}
         <picture className="block w-full mb-10 lg:w-1/2">
-          <source
-            srcSet={`${process.env.PUBLIC_URL}/images/offers-section-desktop.webp`}
-            media="(min-width: 768px)"
-          />
+          <source srcSet="/images/member/offers-section-desktop.webp" media="(min-width: 768px)" />
           <img
-            src={`${process.env.PUBLIC_URL}/images/offers-section-mobile.png`}
+            src="/images/member/offers-section-mobile.png"
             alt="A group of 3 ladies smiling and looking at the camera."
             className="h-full w-full rounded-[10px] object-cover"
           />
