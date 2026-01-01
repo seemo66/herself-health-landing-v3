@@ -64,7 +64,7 @@ export default function HeroSection() {
             Become a Member
           </button>
 
-          <p className="font-untitled text-[#1D2534] text-[14px] md:text-[21px] leading-tight">
+          <p className="font-untitled text-[#1D2534] text-[14px] md:text-[16px] lg:text-[21px] leading-tight">
             <em>
               Start your care with a team that understands what matters most to women in their
               healthcare.

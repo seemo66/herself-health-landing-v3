@@ -90,8 +90,8 @@ export default function ServicesSection() {
             <h4 className="font-bold text-[24px] lg:font-medium lg:text-[30px]">
               Select the membership payment option that works best for you
             </h4>
-            <p className="font-medium text-[18px] lg:text-[21px]">
-              <em>All providers are menopause certified</em>
+            <p className="text-[18px] lg:text-[21px]">
+              <strong><em>All providers are menopause certified</em></strong>
             </p>
           </div>
 

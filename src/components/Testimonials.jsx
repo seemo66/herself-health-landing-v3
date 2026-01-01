@@ -24,11 +24,11 @@ export default function Testimonials() {
         {testimonials.map((testimonial, index) => (
           <p
             key={index}
-            className={`transition-opacity duration-1000 absolute w-full text-[18px] font-medium ${
+            className={`transition-opacity duration-1000 absolute w-full text-[18px] ${
               index === current ? 'opacity-100' : 'opacity-0'
             }`}
           >
-            <em>{testimonial}</em>
+            <strong><em>{testimonial}</em></strong>
           </p>
         ))}
       </div>

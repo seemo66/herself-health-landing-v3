@@ -11,8 +11,8 @@ export default function MembershipCard({ membership }) {
       <p className="font-bold text-darkPink text-[20px] leading-[20px]">{membership.priceLabel}</p>
       <h4 className="font-bold text-pink text-[30px] leading-[30px] mb-2">{membership.price}</h4>
       {/* Intro price */}
-      <p className="font-medium text-darkPink text-[20px] leading-[28px]">
-        <em>{membership.introLabel}</em>
+      <p className="font-untitled text-darkPink text-[20px] leading-[28px]">
+        <strong><em>{membership.introLabel}</em></strong>
       </p>
       <p className="font-medium text-darkPink text-[23px] leading-[33px] line-through">
         {membership.introPrice}
