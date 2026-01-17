@@ -49,11 +49,12 @@ export default function WaitingListSection() {
 
           {/* Headline */}
           <h2 className="font-reckless font-medium text-[40px] text-pink mb-[35px] md:hidden leading-[45px]">
-            Schedule Your Appointment
+            Speak with a Membership Advisor
           </h2>
           {/* Description */}
           <p className="font-untitled font-normal text-[18px] text-[#1D2534] leading-6 mb-[25px] md:hidden">
-            Fill out the form below and someone from our team will get back to you in 24 hours. 
+            Fill out the form below and our team will reach out to answer your questions and discuss
+            if membership is right for you.
           </p>
 
           {/* Form box */}
@@ -63,11 +64,12 @@ export default function WaitingListSection() {
               className="hidden font-reckless font-medium text-pink mb-[35px] 
                           md:block text-[50px] leading-[45px]"
             >
-              Schedule Your Appointment
+              Speak with a Membership Advisor
             </h2>
             {/* Description */}
             <p className="hidden md:block font-untitled font-normal text-[18px] text-[#1D2534] leading-6 mb-[25px] lg:text-[20px]">
-              Fill out the form below and someone from our team will get back to you in 24 hours. 
+              Fill out the form below and our team will reach out to answer your questions and
+              discuss if membership is right for you.
             </p>
             {/* Embedded form */}
             <WaitingListForm />

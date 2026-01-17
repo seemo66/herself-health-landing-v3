@@ -84,8 +84,8 @@ export default function ServicesSection() {
         </div>
       </div>
 
-      <div>
-        <div className="mb-8 flex flex-col gap-4 md:flex-row md:flex-wrap lg:gap-6 xl:px-16">
+      {/* <div>
+        <div className="flex flex-col gap-4 mb-8 md:flex-row md:flex-wrap lg:gap-6 xl:px-16">
           <div className="w-full flex flex-col gap-4 border border-black rounded-lg bg-pink text-white px-[21px] py-[37px] lg:flex-1 lg:justify-center lg:gap-8 lg:px-[60px]">
             <h2 className="font-reckless text-[40px] leading-tight lg:text-[60px]">
               Membership Options
@@ -103,8 +103,7 @@ export default function ServicesSection() {
           ))}
         </div>
 
-        {/* CTA */}
-        <div className="mb-12 flex flex-col gap-6 lg:items-center">
+        <div className="flex flex-col gap-6 mb-12 lg:items-center">
           <button
             className="mx-auto w-[330px] md:w-[385px] lg:w-[594px]
                bg-purple text-white font-untitled text-[22px]
@@ -123,14 +122,12 @@ export default function ServicesSection() {
         </div>
 
         <div className="lg:flex lg:gap-6 lg:mt-20 lg:max-w-[1400px] lg:m-auto">
-          {/* Column 1: heading */}
           <div className="lg:w-1/3">
             <h3 className="mb-4 font-medium text-darkPink text-[28px] lg:text-[35px]">
               Your Membership Includes:
             </h3>
           </div>
 
-          {/* Columns 2 & 3: list */}
           <div className="lg:w-2/3 lg:flex lg:gap-6">
             <ul className="list-disc pl-8 space-y-2 font-medium text-darkPink text-[20px] leading-[28px] lg:text-[23px]">
               <li>Longer visits</li>
@@ -150,7 +147,7 @@ export default function ServicesSection() {
             </ul>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

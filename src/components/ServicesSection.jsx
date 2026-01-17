@@ -23,13 +23,13 @@ export default function ServicesSection() {
       {/* Text content */}
       <div className="xl:max-w-[605px]">
         <h2 className="mb-[16px] font-reckless text-[40px] leading-tight text-pink lg:text-[50px] 2xl:text-[60px]">
-          Why care built for women 50 plus makes a difference
+          The Reality of Healthcare Today
         </h2>
 
-        <hr className="hidden lg:block my-6 border-t border-black" />
+        <hr className="hidden my-6 border-t border-black lg:block" />
 
         <p className="mb-[25px] font-untitled text-[18px] font-normal leading-6 text-[#1D2534] lg:text-[20px]">
-          Women face changes in heart health, bone health, memory and metabolism that often look
+          Women face changes in heart health, bone health, memory and metabolishm that often look
           different from what men experience. Yet many parts of healthcare still rely on research
           and standards built mostly around male bodies.
         </p>
@@ -43,12 +43,12 @@ export default function ServicesSection() {
 
         <p className="mb-[25px] font-untitled text-[18px] font-normal leading-6 text-[#1D2534] lg:text-[20px]">
           Traditional coverage does not always support this proactive approach. We bill insurance
-          for what it will cover, and your membership helps us offer the extra time and support that
-          make your care feel truly personalized.
+          for what it will covers, and your membership helps us offer the extra time and support
+          that make your care feel truly personalized.
         </p>
 
         <p className="mb-[25px] font-untitled text-[18px] font-normal leading-6 text-[#1D2534] lg:text-[20px]">
-          <strong>With the Herself Health Membership, you get:</strong>
+          <strong>With your membership you get:</strong>
         </p>
 
         {/* Service highlights with checkmarks */}
@@ -64,7 +64,7 @@ export default function ServicesSection() {
                 src={`${process.env.PUBLIC_URL}/images/checkmark-pink.svg`}
                 alt="" // decorative, so we leave empty alt
                 aria-hidden="true"
-                className="h-5 w-5"
+                className="w-5 h-5"
               />
               <span>{item}</span>
             </li>

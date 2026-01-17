@@ -10,7 +10,7 @@ import MembershipSection from './components/MembershipSection';
 // import FormGuideSectionDesktop from './components/FormGuideSectionDesktop';
 import WaitingListSection from './components/WaitingListSection';
 import ComparisonSection from './components/ComparisonSection';
-import OffersScection from './components/OffersSection';
+import OffersSection from './components/OffersSection';
 import LocationSection from './components/LocationsSection';
 // import HerselfHealthLogoSection from './components/HerselfHealthLogoSection';
 import MembershipDetailsSection from './components/MembershipDetailsSection';
@@ -18,6 +18,7 @@ import OurCareSection from './components/OurCareSection';
 import NextStepSection from './components/NextStepSection';
 import FaqSection from './components/FaqSection';
 import Testimonials from './components/Testimonials';
+import PricingSection from './components/PricingSection';
 
 function App() {
   // define the order of sections for easy management
@@ -26,11 +27,12 @@ function App() {
     ServicesSection, // services offered by the company
     MembershipSection, // membership or subscription information
     ComparisonSection, // comparison of services
-    OffersScection, // offers promotions
-    WaitingListSection, // waiting list or sign-up form
-    MembershipDetailsSection,
+    OffersSection, // offers promotions
     OurCareSection,
     Testimonials,
+    PricingSection,
+    WaitingListSection, // waiting list or sign-up form
+    MembershipDetailsSection,
     NextStepSection,
     FaqSection,
     Footer,

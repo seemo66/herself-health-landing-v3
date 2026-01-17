@@ -92,14 +92,14 @@ export default function WaitingListForm() {
         const utmData = getUTMData();
         window.dataLayer.push({
           event: 'form_start',
-          form_name: 'guide_waitlist',
-          form_id: 'guide-waitlist-form',
+          form_name: 'membership',
+          form_id: 'membership-form',
           utm_source: utmData.utm_source,
           utm_medium: utmData.utm_medium,
           utm_campaign: utmData.utm_campaign,
           fb_ad_id: utmData.fb_ad_id,
           campaign_id: utmData.campaign_id,
-          page_type: 'guide_landing',
+          page_type: 'membership_landing',
         });
       }
     }
@@ -122,13 +122,13 @@ export default function WaitingListForm() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          id: 'guide-waitlist-form', // Form identifier
+          id: 'membership-form', // Form identifier
           fields: JSON.stringify(formData), // Salesforce fields
-          form_title: 'Guide Waitlist', // Form title for tracking
+          form_title: 'Membership', // Form title for tracking
           utm_data: JSON.stringify(utmData), // UTM tracking data
-          page_lead_source: 'Guide', // utmData.utm_source, // Lead source for this page
+          page_lead_source: 'Membership_long', // utmData.utm_source, // Lead source for this page
           page_campaign_id: '', // No specific campaign for guide page
-          form_source: 'guide_waitlist', // Specific form source identifier
+          form_source: 'membership', // Specific form source identifier
         }),
       });
 
@@ -140,14 +140,14 @@ export default function WaitingListForm() {
         if (typeof window !== 'undefined' && window.dataLayer) {
           window.dataLayer.push({
             event: 'form_submit_success',
-            form_name: 'guide_waitlist',
-            form_id: 'guide-waitlist-form',
+            form_name: 'membership',
+            form_id: 'membership-form',
             utm_source: utmData.utm_source,
             utm_medium: utmData.utm_medium,
             utm_campaign: utmData.utm_campaign,
             fb_ad_id: utmData.fb_ad_id,
             campaign_id: utmData.campaign_id,
-            page_type: 'guide_landing',
+            page_type: 'membership_landing',
           });
         }
 
@@ -158,7 +158,7 @@ export default function WaitingListForm() {
         timerRef.current = setTimeout(() => {
           // setSubmitted(false);
           setFormData({ FirstName: '', LastName: '', Email: '', Phone: '' });
-        }, 5000);
+        }, 10000);
       } else {
         const errorData = await response.text();
         console.error('Form submission failed:', errorData);
@@ -189,29 +189,23 @@ export default function WaitingListForm() {
                         : 'opacity-0 pointer-events-none'
                     }`}
       >
-        <p className="pb-2 text-2xl text-center lg:text-left">Thank you!</p>
-        <p className="pb-5 text-2xl text-center lg:text-left">Your form has been submitted</p>
-        {/* <a
-          href="/files/herself-health-guide.pdf"
+        <p className="pb-4 text-2xl">Thank you for inquiring about herself health membership!</p>
+        <a
+          href="/files/herself-health-guide-50.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="underline text-dusty-indego"
+          className="pb-2 text-2xl text-center underline text-dusty-indego lg:text-left"
         >
           [Click here to download your free guide to feeling your best]
         </a>
-        <p className="py-5">
-          We'll reach out soon to answer any questions and help you schedule your first visit.
+        <p className="py-5 pb-2 text-2xl">
+          We'll reach out to help answer any questions and go over plans available.
         </p>
-
-        <p className="text-xl">Prefer to call now?</p>
-        <a className="text-xl" href="tel:8882901209">
-          (888) 290-1209
-        </a> */}
       </div>
 
       {/* error message */}
       {error && (
-        <div className="absolute top-0 left-0 right-0 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
+        <div className="absolute top-0 left-0 right-0 px-4 py-3 mb-4 text-red-700 bg-red-100 border border-red-400 rounded">
           {error}
         </div>
       )}
@@ -258,7 +252,7 @@ export default function WaitingListForm() {
               : 'bg-purple text-white hover:bg-purple/90'
           }`}
         >
-          {isLoading ? 'Submitting...' : 'Submit'}
+          {isLoading ? 'Submitting...' : 'Request a Call Back'}
         </button>
       </form>
     </div>

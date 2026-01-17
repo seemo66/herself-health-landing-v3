@@ -31,7 +31,7 @@ const careComparisons = [
     other: 'Typically referred out to external providers with limited coordination',
   },
   {
-    title: 'Midlife expertise',
+    title: 'Women\'s Health Expert',
     hh: 'Clinicians trained in women’s health, prevention and midlife changes',
     other: 'Training centered on general internal or family medicine',
   },

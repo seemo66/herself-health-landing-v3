@@ -24,19 +24,6 @@ export default function ServicesSection() {
         </h2>
 
         <p className="mb-5 text-[18px] font-medium leading-6 text-[#1D2534] xl:text-[25px]">
-          If you choose the monthly plan
-        </p>
-
-        <ul className="list-disc pl-6 space-y-2 mb-5 text-[18px] leading-6 text-[#1D2534] xl:text-[21px] xl:mb-10">
-          <li>You can cancel in the first 30 days of your first year if it’s not the right fit.</li>
-          <li>
-            If you complete a screening during that time, we will bill your insurance if it is
-            covered or charge the standard cash price.
-          </li>
-          <li>After the first 30 days, the membership continues for the full year.</li>
-        </ul>
-
-        <p className="mb-5 text-[18px] font-medium leading-6 text-[#1D2534] xl:text-[25px]">
           How your membership works with insurance
         </p>
 
@@ -50,6 +37,19 @@ export default function ServicesSection() {
             including longer visits, personalized screening and prevention plans, and coordinated
             support.
           </li>
+        </ul>
+
+        <p className="mb-5 text-[18px] font-medium leading-6 text-[#1D2534] xl:text-[25px]">
+          If you choose the monthly plan
+        </p>
+
+        <ul className="list-disc pl-6 space-y-2 mb-5 text-[18px] leading-6 text-[#1D2534] xl:text-[21px] xl:mb-10">
+          <li>You can cancel in the first 30 days of your first year if it's not the right fit.</li>
+          <li>
+            If you complete a screening during that time, we will bill your insurance if it is
+            covered or charge the standard cash price.
+          </li>
+          <li>After the first 30 days, the membership continues for the full year.</li>
         </ul>
 
         <p className="mb-5 text-[18px] font-medium leading-6 text-[#1D2534] xl:text-[25px]">
@@ -67,7 +67,7 @@ export default function ServicesSection() {
 
         <ul className="list-disc pl-6 space-y-2 mb-5 text-[18px] leading-6 text-[#1D2534] xl:text-[21px] xl:mb-0">
           <li>Membership renews once a year.</li>
-          <li>We will always send a reminder at least 30 days before your renewal date. </li>
+          <li>We will always send a reminder at least 30 days before your renewal date.</li>
         </ul>
       </div>
     </section>
